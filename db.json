@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Général"
+    },
+    {
+      "id": 2,
+      "name": "BDE"
+    },
+    {
+      "id": 3,
+      "name": "Vie étudiante"
+    },
+    {
+      "id": 4,
+      "name": "Programmation"
+    }
+  ],
+  "messages": [
+    {
+      "content": "ffv",
+      "author": "jb",
+      "id": 1
+    },
+    {
+      "content": "vfvf",
+      "author": "jb",
+      "id": 2
+    },
+    {
+      "content": "fvf",
+      "author": "jb",
+      "id": 3
+    },
+    {
+      "content": "exemple",
+      "author": "jb",
+      "id": 4
+    },
+    {
+      "content": "jb",
+      "author": "jb",
+      "id": 5
+    },
+    {
+      "content": "vffv",
+      "author": "jb",
+      "id": 6
+    },
+    {
+      "content": "vfvf",
+      "author": "jb",
+      "id": 7
+    },
+    {
+      "content": "cdc",
+      "author": "jb",
+      "id": 8
+    }
+  ]
+}

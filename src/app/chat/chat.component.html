@@ -1,0 +1,39 @@
+<div *ngIf="isConnected === false">
+    <div class="input-group mb-3">
+        <input
+          type="text"
+          [(ngModel)]="userName"
+          class="form-control"
+          placeholder="Entrez votre pseudo"
+          aria-label="Entrez votre pseudo"
+          aria-describedby="basic-addon2"
+          id="pseudo"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            (click)="login()"
+            type="button"
+          >
+            Connexion
+          </button>
+        </div>
+      </div>
+  </div>
+  
+  <div *ngIf="isConnected === true">
+    <div class="row">
+      <app-home></app-home>
+      <div class="col-md-9" id="contentSender">
+          <input type="text" class="form-control" placeholder="Ecire ici" [(ngModel)]="content">
+          <button class="btn btn-outline-secondary" aria-describedby="basic-addon2" type="submit" (click)="sendMessages()">Envoyer</button>
+      </div>
+      <div>
+        <p *ngFor="let message of messages">
+          <span class="alert alert-secondary">{{message.author}}:</span>
+          <span class="alert alert-secondary">{{message.content}}</span>
+          
+        </p>
+      </div>
+    </div>
+  </div>

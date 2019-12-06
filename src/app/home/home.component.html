@@ -1,0 +1,10 @@
+<div class="navbar navbar-expand-lg navbar-light" id="menu">
+    <div class="col-md-4">
+        <h2>Home</h2>
+      <p *ngFor="let cat of categories">
+        <a (click)="changeCategory(cat)" routerLink="/categories/{{ cat.id }}" routerLinkActive="router-link-active" >
+          {{ cat.name }}
+      </a>
+      </p>
+    </div>
+  </div>

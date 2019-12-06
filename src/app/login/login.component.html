@@ -1,0 +1,21 @@
+<div class="form_add_user">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            [(ngModel)]="newUser"
+            class="form-control"
+            placeholder="Entrez votre pseudo"
+            aria-label="Entrez votre pseudo"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              (click)="addUser()"
+              type="button"
+            >
+              Ajouter
+            </button>
+          </div>
+        </div>
+</div>
