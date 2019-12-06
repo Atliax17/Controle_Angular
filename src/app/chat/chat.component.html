@@ -24,7 +24,7 @@
   <div *ngIf="isConnected === true">
     <div class="row">
       <app-home></app-home>
-      <div class="col-md-9" id="contentSender">
+      <div class="col-md-9" id="content">
           <input type="text" class="form-control" placeholder="Ecire ici" [(ngModel)]="content">
           <button class="btn btn-outline-secondary" aria-describedby="basic-addon2" type="submit" (click)="sendMessages()">Envoyer</button>
       </div>
@@ -32,7 +32,6 @@
         <p *ngFor="let message of messages">
           <span class="alert alert-secondary">{{message.author}}:</span>
           <span class="alert alert-secondary">{{message.content}}</span>
-          
         </p>
       </div>
     </div>
